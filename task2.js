@@ -11,17 +11,24 @@ const words = [
   "and",
 ];
 
-function counterAWords([...args]) {
-  let counter = 0;
-  for (const arg of args) {
-    if (arg.indexOf("a") === 0) {
-      counter++;
-    }
-  }
-  return counter;
+function aWords(array) {
+  return array.filter((word) => word.startsWith("a")).length;
 }
+console.log(aWords(words));
 
-console.log(counterAWords(words));
+// also good:
+
+// function counterAWords([...args]) {
+//   let counter = 0;
+//   for (const arg of args) {
+//     if (arg.indexOf("a") === 0) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+
+// console.log(counterAWords(words));
 
 // also good:
 
