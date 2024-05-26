@@ -8,11 +8,20 @@ const cities = [
   "Bucuresti",
 ];
 
-function renderNames(names) {
-    for (const name of names) {
-      if
-    console.log(name);
+function countWords(array) {
+  const count = {};
+
+  array.forEach((element) => {
+    if (count[element]) {
+      count[element]++;
+    } else {
+      count[element] = 1;
+    }
+  });
+
+  for (const [key, result] of Object.entries(count)) {
+    console.log(`${key}: ${result}`);
   }
 }
 
-console.log(renderNames(cities));
+countWords(cities);
