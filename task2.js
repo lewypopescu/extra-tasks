@@ -28,8 +28,6 @@ console.log(aWords(words));
 //   return counter;
 // }
 
-// console.log(counterAWords(words));
-
 // also good:
 
 // let aWords = [];
@@ -40,8 +38,6 @@ console.log(aWords(words));
 //   }
 // }
 
-// console.log(aWords.length);
-
 // also good:
 
 // let aWords = [];
@@ -51,5 +47,3 @@ console.log(aWords(words));
 //     aWords.push(word);
 //   }
 // }
-
-// console.log(aWords.length);
